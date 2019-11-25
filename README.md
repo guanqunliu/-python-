@@ -1,8 +1,5 @@
-# -python-2019.10.31课堂练习
-def Fib(i):  
-    if i==1 or i==0:  
-        return 1  
-    else:  
-        return Fib(i-1)+Fib(i-2) 
-    
-print(Fib(36))
+# -python-
+## 姓名       刘冠群
+## 年级       2019级
+## 学号       51194108001
+## 院系       教育学部 教育信息技术学系
