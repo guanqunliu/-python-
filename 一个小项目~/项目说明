@@ -1,9 +1,87 @@
-**一个基于python的小应用：天气播报器**  
+**Analysis of KEKE English**  
   
->**项目简介**   
-  #### &#8195;&#8195;Python的出现，使得很多程序代码语言被简化了。而爬虫技术便是其中受益很大的一个。Python使得网络爬虫变得更加简单，因此本次项目我便尝试用Python进行一个爬虫项目的开发。
-爬虫技术和目标对象的网页复杂度相关，作为一个爬虫新手，我选择的是复杂度较小的中国新闻网，作为此次项目练习的目标网站。
-该项目主要需要实现以下几个功能：
-（1）通过爬虫方式，调取中国天气网的全国城市最低气温信息；
-（2）选取最低气温前十的城市显示出来；
-（3）用可视化的图片将最低气温前十的城市展现；
+ 
+
+ ----------------------------------------    
+>**1 项目简介**    
+   >>**1.1 Analysis**  
+  #### &#8195;&#8195;Ubiquitous learning is an important way of learning in life-long learning society. The development of information technology provides a broader space for ubiquitous learning[1]. More and more people tend to adopt E-learning to achieve life-long learning. Informal learning communities based on network can solve the problem existing in traditional learning, such as time and space limited, using resources difficulty[2]. 
+#### &#8195;&#8195;Learners are pleased to learn in an informal learning environment that is not limited by time or place. To meet learner’s needs best, KEKE English has made some efforts and it has great advantages in learning environment, mainly including space flexible, time freedom.  
+
+ ----------------------------------------     
+ >**2 项目逻辑框架及代码实现**    
+   >>**2.1 导入**  
+  ####  &#8195;&#8195;E-learning platform designer need to consider what will the learner learn. Maybe they learn knowledge、skills or some attitude. The goals that meet the principle : zone of proximal development, can inspire learning behavior most. Junchen Ma believes that in order to ensure the continuous role of self-efficacy in the online learning process, the setting of learning goals should be clear, specific and moderately difficult[3] The research shows that the teaching objectives setting according to learners' own specific situation can be better to stimulate learners' learning motivation and achieve more better learning effect[4]. Online English learning should recommend suitable learning resources for learners based on their pre-planned time requirements, and aiming at learners' preference for different types of learning resources and adaptability to the difficulty level of learning resources[5].   
+  #### &#8195;&#8195;As an online English learning platform, KEKE English meets the learning needs of people who are with different position and English levels. As the chart shows, KEKE English is a multi-functional English learning software. And it provides supports for learners to learn language knowledge, language skills, or enhance emotional attitudes of English.  
+   
+<div align="center"><img src="https://github.com/ECNU-DEIT-ACADEMIC-2019/Team2/blob/master/images/environment-8.jpg" height="200" width="480" > </div>  
+
+   >>**2.2 解析网页**  
+  #### &#8195;&#8195;**(1)**  At the beginning of each level, KEKE English will present all the new words for the user to make they be familiar with before "testing". This should be changed. We think it should let users choose "know" or "don’t know" first, and then decide whether to "cross out" the word or not. Lastly, users can enter the "start test". In this way, users can not only make self-prediction, but also reduce unnecessary recitation and improve efficiency.  
+ ####  &#8195;&#8195;**(2)**  Secondly, the details of the KEKE English words page just contains “Chinese explanations”, “mnemonic”, “example sentence”, which looks slightly boring. It can add “English explanations”, “picture association”, “synonyms” and other functions, so it can make the best memories.  
+ ####  &#8195;&#8195;**(3)**  Thirdly, it should allow two or more types of word books to be studied at the same time. Because many exams timetable are close and need to prepare at the same time.  
+  #### &#8195;&#8195;**(4)**  English pronunciation practice is only available on the official website, but not on the mobile phone. Nearly 90% of learners are using it on the mobile phone. So it should add this module on the mobile phone. 
+  
+   >>**2.3 读取并存储所需信息**  
+  ####  &#8195;&#8195;E-learning platform designer need to consider what will the learner learn. Maybe they learn knowledge、skills or some attitude. The goals that meet the principle : zone of proximal development, can inspire learning behavior most. Junchen Ma believes that in order to ensure the continuous role of self-efficacy in the online learning process, the setting of learning goals should be clear, specific and moderately difficult[3] The research shows that the teaching objectives setting according to learners' own specific situation can be better to stimulate learners' learning motivation and achieve more better learning effect[4]. Online English learning should recommend suitable learning resources for learners based on their pre-planned time requirements, and aiming at learners' preference for different types of learning resources and adaptability to the difficulty level of learning resources[5].   
+  #### &#8195;&#8195;As an online English learning platform, KEKE English meets the learning needs of people who are with different position and English levels. As the chart shows, KEKE English is a multi-functional English learning software. And it provides supports for learners to learn language knowledge, language skills, or enhance emotional attitudes of English.  
+   
+<div align="center"><img src="https://github.com/ECNU-DEIT-ACADEMIC-2019/Team2/blob/master/images/environment-8.jpg" height="200" width="480" > </div>  
+
+  >>**2.4 展示所取信息**  
+  #### &#8195;&#8195;**(1)**  At the beginning of each level, KEKE English will present all the new words for the user to make they be familiar with before "testing". This should be changed. We think it should let users choose "know" or "don’t know" first, and then decide whether to "cross out" the word or not. Lastly, users can enter the "start test". In this way, users can not only make self-prediction, but also reduce unnecessary recitation and improve efficiency.  
+ ####  &#8195;&#8195;**(2)**  Secondly, the details of the KEKE English words page just contains “Chinese explanations”, “mnemonic”, “example sentence”, which looks slightly boring. It can add “English explanations”, “picture association”, “synonyms” and other functions, so it can make the best memories.  
+ ####  &#8195;&#8195;**(3)**  Thirdly, it should allow two or more types of word books to be studied at the same time. Because many exams timetable are close and need to prepare at the same time.  
+  #### &#8195;&#8195;**(4)**  English pronunciation practice is only available on the official website, but not on the mobile phone. Nearly 90% of learners are using it on the mobile phone. So it should add this module on the mobile phone. 
+  
+  >>**2.5 用GUI界面呈现**  
+  #### &#8195;&#8195;**(1)**  At the beginning of each level, KEKE English will present all the new words for the user to make they be familiar with before "testing". This should be changed. We think it should let users choose "know" or "don’t know" first, and then decide whether to "cross out" the word or not. Lastly, users can enter the "start test". In this way, users can not only make self-prediction, but also reduce unnecessary recitation and improve efficiency.  
+ ####  &#8195;&#8195;**(2)**  Secondly, the details of the KEKE English words page just contains “Chinese explanations”, “mnemonic”, “example sentence”, which looks slightly boring. It can add “English explanations”, “picture association”, “synonyms” and other functions, so it can make the best memories.  
+ ####  &#8195;&#8195;**(3)**  Thirdly, it should allow two or more types of word books to be studied at the same time. Because many exams timetable are close and need to prepare at the same time.  
+  #### &#8195;&#8195;**(4)**  English pronunciation practice is only available on the official website, but not on the mobile phone. Nearly 90% of learners are using it on the mobile phone. So it should add this module on the mobile phone. 
+  
+ ----------------------------------------  
+   
+>**3 运行结果**    
+#### (1)读取天气信息
+#### &#8195;&#8195;motivation often be taken part into 2 types, intrinsic and extrinsic motivation. Intrinsic motivation include interests, happiness and satisfaction. Extrinsic motivation mainly include reward, peer’s inspiration and requirements of teacher.
+#### &#8195;&#8195; As we can see from KEKE English apps, there are various types of learning contents from K-12 to graduate students and business workers. People can find their learning interests and suitable knowledge for different aims. For example, some people prefer listen to some ABC news or VOA to improve listening skills. some other people would read some news and stories for entertaining. User also can see the subscription numbers and pop content while not knowing what to learn. In brief, everyone can find their interests and can be motivated by its abundant and integrated contents.
+<div align="center"><img src="https://github.com/ECNU-DEIT-ACADEMIC-2019/Team2/blob/master/images/behavior-1.jpg" height='500' width='350'> </div> 
+
+#### (2)具体城市信息所在位置
+#### &#8195;&#8195;There are some common problems existed in E-learning platform, that is the passion and engagement of student will decrease with the time goes by, then gradually give up or lose interest[8] . 
+####  &#8195;&#8195;When talking about KEKE English, it encourage users to sign in and learn everyday to earn some more KEKE beans(award). This function can facilitate students’ subjective initiative(主观能动性) and improve their engagement. In addition, ranking list can form more visual images for users to make some comparison with other people and inspire or motivate users to insist.
+<div align="center">
+  <img src="https://github.com/ECNU-DEIT-ACADEMIC-2019/Team2/blob/master/images/behavior-2.png"  height='500' width='350' > 
+<img src="https://github.com/ECNU-DEIT-ACADEMIC-2019/Team2/blob/master/images/behavior-3.png"  height='500' width='350' > </div> 
+
+>>**3.2 Suggestions**  
+#### &#8195;&#8195;Broaden examination field. At present, KEKE English examination mainly include CET-4, CTE-6, TEM-8 etc. there is a suggestion that they can add more types of examinations like GRE, SAT, TOFEL, IELTS for those who are preparing for going abroad.
+####  &#8195;&#8195;Exam comprehensive ability. Comprehensive simulation examinations are really necessary for users who preparing for real context examination. So there is a suggestion for KEKE English to alter their strategies and integrate all types of question to test learner’s comprehensive ability and performance.
+<div align="center"><img src="https://github.com/ECNU-DEIT-ACADEMIC-2019/Team2/blob/master/images/behavior-7.png"  height='500' width='350'> </div> 
+
+----------------------------------------   
+
+>**4 心得体会**     
+#### &#8195;&#8195;The application of E-learning platform can complete the weakness of traditional class, it include two aspects of interaction. Firstly, it include human-human interaction which can highly support the interaction between teacher and student, peer to peer and all learners in online learning context, like personalized learning, collabrative learning. In addition, it also include human-machine interaction, like in-time reflection, face recognition, speech recognition etc.
+In this section, we discuss manner and media of KEKE English platform including human-human interaction and human-machine interaction.
+#### (1)	Manner 
+#### &#8195;&#8195; When talking about the function of human-human interaction manner of KEKE English, it is important to introduce KEKE teacher app, which is a instructional tutoring system for teachers to arrange assignments, check students’ performance and give in-time reflection. This function support student and teachers to interact deeper by monitoring and reflection. In addition, in the training part, users can express their view and opinions after watching a report or video and share it in community. Moreover, in the exam-preparing column, there are many discussion group, users can find a suitable group to share their problems, experience and own opinions, in the meantime, they also can inspire and monitor each other.
+<div align="center">
+  <img src="https://github.com/ECNU-DEIT-ACADEMIC-2019/Team2/blob/master/images/interaction-1.png"  height='500' width='350'> 
+<img src="https://github.com/ECNU-DEIT-ACADEMIC-2019/Team2/blob/master/images/interaction-2.png"  height='500' width='350'> 
+<img src="https://github.com/ECNU-DEIT-ACADEMIC-2019/Team2/blob/master/images/interaction-3.png"  height='500' width='350'> </div> 
+
+<div align="center"><img src="https://github.com/ECNU-DEIT-ACADEMIC-2019/Team2/blob/master/images/interaction-6.png" > </div>    
+
+ ----------------------------------------   
+ 
+   >**5 疑惑及可改进之处**    
+   >>**5.1 Analysis**  
+  #### &#8195;&#8195; TheGlossary of Education Reform funded by Nellie Mae EducationFoundation defines learning experience roughly: learning experience refers to the experience generated by students' interaction with courses, teaching activities, teaching interaction and learning environment in the learning process[9].The learning experience of e-learning platform: learners' perception and reflection of the platform learning environment, learning activities, learning services, effect and many other learning elements and platform construction[10]. We used a questionnaire to investigate the functions that learners think keke English can improve their learning experience. We will combine subjective cognition and objective data to evaluate the learning experience brought by coco English from the aspects of accessibility, availability and happiness to evaluate.
+    
+  ----------------------------------------    
+   
+>**6 参考网站**    
+
+
