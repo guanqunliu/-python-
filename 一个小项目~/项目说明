@@ -6,8 +6,9 @@ Python的出现，使得很多程序代码语言被简化了。而爬虫技术�
 （1）通过爬虫方式，调取中国天气网的全国城市最低气温信息；
 （2）选取最低气温前十的城市显示出来；
 （3）用可视化的图片将最低气温前十的城市展现；
+
 项目逻辑框架及代码实现
- 
+   <div align="center"><img src="https://github.com/guanqunliu/-python-/blob/master/%E5%9B%BE%E7%89%87/1.png" height="1700" width="800" > </div>  
 图1 项目逻辑框架
 （1）导入
 导入相关的requests、BeautifulSoup和matplotlib等包，为后续爬取网页，并读取信息，作图做好准备；
