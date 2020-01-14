@@ -1,1 +1,34 @@
-##  一个基于python的小应用：天气播报器  
+# 矩阵计算器
+## 项目简介  
+&nbsp;&nbsp;&nbsp;&nbsp;本项目的主要创意来源是老师上课所讲的计算器，在计算器的基础上，我延伸为计算两个矩阵相乘的一个小应用。  
+&nbsp;&nbsp;&nbsp;&nbsp;该项目主要需要实现以下几个功能： 
+
+**（1）**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;能自主选择进行运算的矩阵的秩n； 
+
+**（2）**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;根据输入的矩阵的秩，自动生成两个n*n的文本框；
+
+**（3）**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;能自定义地在文本框内输入想进行运算的两个矩阵；
+
+**（4）**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;能够准确计算矩阵的结果；
+
+**（5）**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;能将矩阵的结果展示在窗口上
+
+## 项目重难点
+&nbsp;&nbsp;&nbsp;&nbsp;本项目的一个重难点是不同ttk窗口的转换。在通过查看相关语法的基础上，我通过调用destroy函数，从外向里依次地销毁函数，从而显示想要显示的函数界面。
+
+## 项目原型设计及代码实现
+**(1)原型设计**&nbsp;&nbsp;&nbsp;&nbsp;
+ <div align="center"><img src="https://github.com/guanqunliu/-python-/blob/master/images/2-1.png" height="360" width="604" > </div> 
+ 
+**(2)代码实现**&nbsp;&nbsp;&nbsp;&nbsp;
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;首先是分布创建三个界面，一个是“初始界面“，一个是“输入矩阵”，还有一个是“显示结果“的界面；然后在主函数中分别调用。
+
+ <div align="center"><img src="https://github.com/guanqunliu/-python-/blob/master/images/2-2.png" height="360" width="500" > </div> 
+ 
+## 运行结果
+
+<div align="center"><img src="https://github.com/guanqunliu/-python-/blob/master/images/2-3.jpg" height="360" width="500" > </div> 
+ 
+## 可改进之处
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;本项目是在老师课上基础上的一个改编，其实还可以更加优化一点，比如可以挑选是用矩阵的乘法、加法或除法等运算，然后加入下拉列表，进行选择，不同的选择调用不同的函数，显示不同的界面；同时可以加入相关的图片背景，使得界面更美观。
